@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .container-main{
+            min-height: 100vh;
+            background-color: burlywood;
+        }
+        .col-h{
+            min-height: 150px;
+            background-color: teal;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <main class="conteiner container-main">
+        <h2 class="mb-2">Section 1(Row/col)</h2>
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+            <div class="col-lg-6 col-md-4 col-sm-2 col-h"></div>
+        </div>
+        <h2 class="mb-2">Section 2(Accordeon)</h2>
+        <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quas quam doloribus delectus recusandae mollitia, labore temporibus dolorem, sequi quae quis rem. Minima enim at atque iusto nemo, eum a!
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dicta error esse. Consequatur dolores non aut fugit soluta, laudantium aperiam ratione corporis eligendi harum sequi hic obcaecati eveniet maiores nesciunt?
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate veritatis adipisci voluptates nihil, dolorum impedit a nemo tempore ducimus ad nobis voluptatibus provident culpa libero dolorem! Nam, eius voluptatibus.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Accordion Item #4
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad provident dolorem, dolorum maiores ullam aliquam officiis sunt cupiditate pariatur natus sequi assumenda, recusandae nam. Tenetur nulla eos repellat molestiae explicabo!
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Accordion Item #5
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur, fuga distinctio, quo commodi eum, nostrum accusantium illum facilis ipsam in! Quasi obcaecati ratione unde quas atque iure molestiae? Impedit.
+                  </div>
+                </div>
+              </div>
+          </div>
+        <h2 class="mb-2">Section 3(Carousel)</h2>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img.freepik.com/free-photo/river-surrounded-by-forests-cloudy-sky-thuringia-germany_181624-30863.jpg?w=1060&t=st=1703631464~exp=1703632064~hmac=1b3f147ca043ad63aa707400e8c948ae1f571f79d89480e33fad880fa599f1e5" class="d-block w-100" alt="Nature">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat maiores nihil non minima eligendi asperiores aperiam blanditiis. Sapiente ducimus tenetur tempore explicabo, fuga, quia modi quis, fugiat excepturi sed omnis.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/tall-trees-forest-mountains-covered-with-fog_181624-11289.jpg?w=996&t=st=1703631495~exp=1703632095~hmac=e5aeee2ecca9e84282c02bfaf2326520297b1c3ffd302b696b014fa218754b40" class="d-block w-100" alt="Nature">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis iusto exercitationem distinctio in quaerat. Rem, consequuntur velit maxime itaque sed quas eos quae est harum maiores numquam dignissimos. Blanditiis, officiis.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/vertical-shot-narrow-river-flowing-near-mountains-covered-with-snow_181624-9955.jpg?w=740&t=st=1703631514~exp=1703632114~hmac=1296b5475c19e90e67d2388ee384a455134cd4dcab6f9ffcd211e5fd01265acc" class="d-block w-100" alt="Nature">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sed dolores quisquam minus commodi expedita, architecto quidem dolorem non, necessitatibus corrupti laboriosam atque error illo quis neque adipisci aliquam eveniet!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/pier-lake-hallstatt-austria_181624-44201.jpg?w=996&t=st=1703631537~exp=1703632137~hmac=2489a1122de8620b548511e8097669d5216c5cd653eede52746e37c6171f60a4" class="d-block w-100" alt="Nature">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sed dolores quisquam minus commodi expedita, architecto quidem dolorem non, necessitatibus corrupti laboriosam atque error illo quis neque adipisci aliquam eveniet!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://img.freepik.com/free-photo/beautiful-landscape-italian-alps-mountain-cadini-di-misurina_181624-8819.jpg?w=996&t=st=1703631552~exp=1703632152~hmac=e3657f7800665dc3f2b67d4f5ebdcdf82253bb2d1cc0b77b463c2838190a50ff" class="d-block w-100" alt="Nature">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates sed dolores quisquam minus commodi expedita, architecto quidem dolorem non, necessitatibus corrupti laboriosam atque error illo quis neque adipisci aliquam eveniet!</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <h2 class="mb-2">Section 4(Toast)</h2>
+        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+        
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <strong class="me-auto">:)</strong>
+              <small>11 mins ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nihil hic necessitatibus similique, nam quaerat eum, minima ut perferendis velit sequi? Quasi expedita vel natus libero. Repellendus corrupti ratione doloribus.
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
+</body>
+</html>
